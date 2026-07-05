@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 func TestWriteRows_JSONEmptyIsBracketArray(t *testing.T) {

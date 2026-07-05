@@ -6,7 +6,7 @@ import (
 	"io"
 	"path/filepath"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 func RunDelete(args []string, stdin io.Reader, stdout, stderr io.Writer) int {

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 func scanForTest(t *testing.T, dir string) ([]gocomments.Comment, []error) {

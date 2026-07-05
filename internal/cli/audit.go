@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 var auditValueFlags = mergeValueFlags(commonScanValueFlags(), map[string]bool{

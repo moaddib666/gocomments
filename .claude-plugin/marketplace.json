@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gocomments",
+  "version": "0.4.0",
+  "description": "gocomments — AST-based CLI to inventory, audit, and remove non-meaningful comments in Go source trees, plus the skills to install and drive it.",
+  "owner": {
+    "name": "Max Nikitenko",
+    "email": "moaddib666@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "gocomments",
+      "description": "Install the gocomments binary and use it to find and remove junk comments in Go code via an AST-aware audit.",
+      "source": "./plugins/gocomments",
+      "category": "development"
+    }
+  ]
+}

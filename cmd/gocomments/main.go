@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"gocomments/internal/cli"
+	"github.com/moaddib666/gocomments/internal/cli"
 )
 
 const version = "0.4.0"

@@ -1,0 +1,13 @@
+{
+  "name": "gocomments",
+  "version": "0.4.0",
+  "description": "Find and remove non-meaningful comments in Go code with the AST-aware gocomments CLI. Ships an install checklist and a junk-comment audit/removal skill.",
+  "author": {
+    "name": "Max Nikitenko",
+    "email": "moaddib666@gmail.com"
+  },
+  "homepage": "https://github.com/moaddib666/gocomments",
+  "repository": "https://github.com/moaddib666/gocomments",
+  "license": "MIT",
+  "keywords": ["go", "golang", "comments", "ast", "cleanup", "refactor", "cli"]
+}

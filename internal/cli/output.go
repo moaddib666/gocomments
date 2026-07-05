@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 // RowSchemaVersion is the JSONL row schema version. Bump it whenever a field

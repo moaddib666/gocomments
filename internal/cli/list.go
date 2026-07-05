@@ -6,7 +6,7 @@ import (
 	"io"
 	"regexp"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 type listFlags struct {

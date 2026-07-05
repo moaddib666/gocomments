@@ -2,14 +2,29 @@
 
 AST-based CLI for inventorying and deleting comments in Go source trees. Built for LLM agents that need to strip non-meaningful comments safely: every comment gets a stable content-derived id, output is deterministic and machine-parseable, deletion is a surgical byte-range splice that never reformats surrounding code, and compiler/tool directives are protected from accidental removal.
 
+## Install
+
+```bash
+go install github.com/moaddib666/gocomments/cmd/gocomments@latest
+gocomments --version
+```
+
+Requires Go 1.20+. The binary lands in `$(go env GOPATH)/bin` — make sure that's on your `PATH`. Or build from source with `make build` (→ `bin/gocomments`).
+
+Claude Code users can install the tool plus the `find-junk-comments` skill as a plugin:
+
+```
+/plugin marketplace add moaddib666/gocomments
+/plugin install gocomments@gocomments
+```
+
 ## Quickstart
 
 ```bash
-make build            # -> bin/gocomments
-bin/gocomments audit ./myproject --json          # <- find likely-junk comments
-bin/gocomments list ./myproject --limit 20
-bin/gocomments search ./myproject --pattern '(?i)todo|fixme'
-bin/gocomments delete ./myproject --id a1b2c3d4e5f6
+gocomments audit ./myproject --json          # <- find likely-junk comments
+gocomments list ./myproject --limit 20
+gocomments search ./myproject --pattern '(?i)todo|fixme'
+gocomments delete ./myproject --id a1b2c3d4e5f6
 ```
 
 Flags may go before or after `<path>` on any subcommand.

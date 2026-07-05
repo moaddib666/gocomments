@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"gocomments/pkg/gocomments"
+	"github.com/moaddib666/gocomments/pkg/gocomments"
 )
 
 type ScanOptions struct {
